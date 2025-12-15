@@ -1,0 +1,5 @@
+{
+  "name": "EtherSculpt",
+  "description": "A cloud-native Generative AI pipeline connecting Gemini 3 Pro for image generation and a Vertex AI backend for 3D model synthesis.",
+  "requestFramePermissions": []
+}
