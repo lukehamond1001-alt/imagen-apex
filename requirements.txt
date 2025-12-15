@@ -1,0 +1,21 @@
+# ======================
+# Imagen Apex Dependencies
+# ======================
+
+# Google Cloud
+google-cloud-aiplatform>=1.38.0
+vertexai>=1.0.0
+google-cloud-storage>=2.10.0
+
+# Image processing
+Pillow>=10.0.0
+numpy>=1.24.0
+
+# HTTP client
+requests>=2.31.0
+
+# Environment management
+python-dotenv>=1.0.0
+
+# Type hints (Python 3.11+ has built-in, but useful for older versions)
+typing-extensions>=4.0.0

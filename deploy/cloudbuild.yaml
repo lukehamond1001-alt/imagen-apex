@@ -1,0 +1,20 @@
+
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args:
+      - 'build'
+      - '--build-arg'
+      - 'HF_TOKEN=${_HF_TOKEN}'
+      - '-t'
+      - '${_REGION}-docker.pkg.dev/${PROJECT_ID}/sam3d-repo/sam3d-cloudrun:latest'
+      - '.'
+    timeout: '7200s'
+images:
+  - '${_REGION}-docker.pkg.dev/${PROJECT_ID}/sam3d-repo/sam3d-cloudrun:latest'
+timeout: '7200s'
+options:
+  machineType: 'E2_HIGHCPU_32'
+  diskSizeGb: 200
+substitutions:
+  _REGION: 'us-central1'
+  _HF_TOKEN: ''  # Pass via: gcloud builds submit --substitutions=_HF_TOKEN=your-token
