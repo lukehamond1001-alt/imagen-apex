@@ -26,8 +26,8 @@ import uvicorn
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# API Key configuration - set via environment variable or use default
-API_KEY = os.environ.get("SAM3D_API_KEY", "sam3d-demo-key-2024")
+# API Key configuration - MUST be set via environment variable
+API_KEY = os.environ.get("SAM3D_API_KEY", "")
 
 # Add SAM 3D to path
 sys.path.insert(0, "/app/sam3d")

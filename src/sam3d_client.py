@@ -54,7 +54,7 @@ class SAM3DClient:
         )
         self.api_key = api_key or get_env_or_default(
             "SAM3D_API_KEY", 
-            "sam3d-demo-key-2024"
+            ""
         )
         self.project_id = project_id or get_env_or_default(
             "GCP_PROJECT_ID",
